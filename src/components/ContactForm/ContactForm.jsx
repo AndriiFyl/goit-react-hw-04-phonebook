@@ -4,8 +4,8 @@ import css from './ContactForm.module.css';
 
 
 export default class ContactForm extends React.Component {
-  state = {
-  name: '',
+    state = {
+   name: '',
   number: '',
     }
 
@@ -27,7 +27,7 @@ export default class ContactForm extends React.Component {
      number: '',})
     }
 
-    render() {
+  render() {
         return (
             <form className={css.form} onSubmit={this.handleSubmit}>
         <label className={css.label__wrapper} > 
@@ -37,7 +37,7 @@ export default class ContactForm extends React.Component {
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
-            onChange={this.handleChange}
+                onChange={this.handleChange}
               />
         </label>
 
