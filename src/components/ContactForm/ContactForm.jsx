@@ -1,4 +1,4 @@
-// Хук===============================================================
+// Хуки===============================================================
 import { useState } from 'react';
 import css from './ContactForm.module.css';
 
@@ -22,7 +22,6 @@ export default function ContactForm(props) {
     }
   };
 
-  // как передать his.state?????=================
   const handleSubmit = event => {
     event.preventDefault();
     props.onSubmitForm({ name, number });
@@ -69,6 +68,7 @@ export default function ContactForm(props) {
     </form>
   );
 }
+
 // Класс-Компонент==================================================
 // import React from 'react';
 // import css from './ContactForm.module.css';
